@@ -1,0 +1,206 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Personal Website</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: Arial, sans-serif;
+        }
+        body {
+            line-height: 1.6;
+            color: #333;
+            background-color: #f9f9f9;
+        }
+        /* Navigation */
+        nav {
+            background-color: #4CAF50;
+            padding: 1rem;
+            position: sticky;
+            top: 0;
+            z-index: 100;
+        }
+        nav ul {
+            list-style: none;
+            display: flex;
+            justify-content: center;
+            gap: 2rem;
+        }
+        nav a {
+            color: white;
+            text-decoration: none;
+            font-weight: bold;
+        }
+        nav a:hover {
+            text-decoration: underline;
+        }
+        /* Section Styles */
+        section {
+            padding: 2rem;
+            max-width: 1000px;
+            margin: 0 auto;
+        }
+        /* Homepage */
+        #homepage {
+            text-align: center;
+            padding-top: 4rem;
+            padding-bottom: 4rem;
+            background-color: #e8f5e9;
+        }
+        #homepage h1 {
+            font-size: 2.5rem;
+            color: #2e7d32;
+            margin-bottom: 1rem;
+        }
+        #homepage p {
+            font-size: 1.2rem;
+            margin-bottom: 2rem;
+        }
+        .homepage-image {
+            width: 300px;
+            height: auto;
+            border-radius: 10px;
+            box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+        }
+        /* About Me */
+        #about  {
+            background-color: white;
+            border-radius: 10px;
+            box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+            margin-top: 2rem;
+        }
+        #about h2 {
+            color: #2e7d32;
+            margin-bottom: 1rem;
+            text-align: center;
+        }
+        #about p {
+            margin-bottom: 0.8rem;
+            font-size: 1.1rem;
+        }
+        /* Interests & Hobbies */
+        #interests {
+            margin-top: 2rem;
+        }
+        #interests h2 {
+            color: #2e7d32;
+            margin-bottom: 1.5rem;
+            text-align: center;
+        }
+        .hobbies-container {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 1.5rem;
+        }
+        .hobby-item {
+            background-color: white;
+            padding: 1rem;
+            border-radius: 10px;
+            box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+            text-align: center;
+        }
+        .hobby-image {
+            width: 100%;
+            height: 200px;
+            object-fit: cover;
+            border-radius: 8px;
+            margin-bottom: 1rem;
+        }
+        /* Contact Info */
+        #contact {
+            background-color: white;
+            border-radius: 10px;
+            box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+            margin-top: 2rem;
+            margin-bottom: 2rem;
+        }
+        #contact h2 {
+            color: #2e7d32;
+            margin-bottom: 1rem;
+            text-align: center;
+        }
+        .contact-details {
+            font-size: 1.1rem;
+            line-height: 1.8;
+        }
+        .contact-details a {
+            color: #4CAF50;
+            text-decoration: none;
+        }
+        .contact-details a:hover {
+            text-decoration: underline;
+        }
+    </style>
+</head>
+<body>
+    <!-- Navigation -->
+    <nav>
+        <ul>
+            <li><a href="#homepage">Home</a></li>
+            <li><a href="#about">About Me</a></li>
+            <li><a href="#interests">Interests & Hobbies</a></li>
+            <li><a href="#contact">Contact Info</a></li>
+        </ul>
+    </nav>
+
+    <!-- Homepage Section -->
+    <section id="homepage">
+        <h1>Hi, I'm Sittie Asheyannah!</h1>
+        <p>Welcome to my personal website—where I share a bit about myself and what I love.</p>
+        <!-- Replace with your homepage picture -->
+        <img src="" alt="My Profile Picture" class="home-image">
+    </section>
+
+    <!-- About Me Section -->
+    <section id="about">
+        <h2>About Me</h2>
+        <p>I’m from Iligan City, Lanao del Norte. I’m currently 14 years old and will be turning 15 this July!</p>
+        <p>I study at Saint Therese Academy. I’m passionate about many things, including coding, reading, playing with my cats, and learning about history.</p>
+        <p>Coding is especially exciting for me because I get to create things like this website and bring my ideas to life!</p>
+    </section>
+
+    <!-- Interests & Hobbies Section -->
+    <section id="interests">
+        <h2>Interests & Hobbies</h2>
+        <div class="hobbies-container">
+            <div class="hobby-item">
+                <!-- Replace with your reading picture -->
+                <img src="reading.jpg" alt="Reading" class="hobby-image">
+                <p>Reading</p>
+            </div>
+            <div class="hobby-item">
+               <img src="/storage/emulated/0/Phone/Pictures/Canva/Marites.jpg_20260316_211437_0000.png" alt="Playing with My Cats" class="hobby-image">
+                <p>Playing with My Cats</p>
+           </div>
+
+
+
+            <div class="hobby-item">
+                <!-- Replace with your coding picture -->
+                <img src="coding.jpg" alt="Coding" class="hobby-image">
+                <p>Coding</p>
+            </div>
+            <div class="hobby-item">
+                <!-- Replace with your history picture -->
+                <img src="history.jpg" alt="History" class="hobby-image">
+                <p>Learning About History</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Info Section -->
+    <section id="contact">
+        <h2>Contact Info</h2>
+        <div class="contact-details">
+            <p>Email: <a href="mailto:your-email@example.com">your-email@example.com</a></p>
+            <p>Phone: <a href="tel:+1234567890">+123 456 7890</a> (optional)</p>
+            <p>Messenger: <a href="your-messenger-link" target="_blank">Click here to message me</a></p>
+            <p>Social Media: <a href="your-social-link" target="_blank">Your Social Media Profile</a> (optional)</p>
+        </div>
+    </section>
+</body>
+</html>
